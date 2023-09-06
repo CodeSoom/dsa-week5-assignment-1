@@ -22,18 +22,6 @@ class EdgeWeightedGraph {
     this.#e++;
   }
 
-  adj(v) {
-    return this.#adj[v];
-  }
-
-  v() {
-    return this.#v;
-  }
-
-  e() {
-    return this.#e;
-  }
-
   edges() {
     const b = new Bag();
     for (let i = 0; i < this.#v; i++) {
@@ -44,6 +32,18 @@ class EdgeWeightedGraph {
       }
     }
     return b;
+  }
+
+  adj(v) {
+    return this.#adj[v];
+  }
+
+  v() {
+    return this.#v;
+  }
+
+  e() {
+    return this.#e;
   }
 }
 
