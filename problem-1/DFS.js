@@ -20,10 +20,14 @@ class DFS {
   }
 
   #dfs(graph, v) {
+    // 정점을 방문했다고 표시
     this.#marked[v] = true;
 
+    // 인접한 정점을 순회한다
     for (const w of graph.adj(v)) {
+      // 방문하지 않았을 경우
       if (!this.#marked[w]) {
+        // w에 v로 부터 왔다고 기록한다
         this.#edgeTo[w] = v;
         this.#dfs(graph, w);
       }
