@@ -20,11 +20,16 @@
 8 1
 4 1
 ```
+![01-undirected-graph.png](01-undirected-graph.png)
 
 2. 위의 그려진 그래프를 인접 행렬로 표현되는 데이터 구조를 그림으로 그려주세요.
 
+![02-adjacency-matrix.png](02-adjacency-matrix.png)
+
 3. 위의 그려진 그래프를 인접 리스트로 표현되는 데이터 구조로 그림으로
    그려주세요.
+
+![03-adjacency-list.png](03-adjacency-list.png)
 
 4. 위의 그래프에서 10번 노드에서 6번 노드로 DFS를 할 때 어떤 경로를 통해서 가는지 구하는 함수를 구현해 주세요.
 
