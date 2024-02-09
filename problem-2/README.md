@@ -21,6 +21,7 @@
 8 1
 4 1
 ```
+![directed-graph.png](directed-graph.png)
 
 2. 도달성을 확인하는 객체 `DirectedDFS.js`를 완성해 주세요.
 
