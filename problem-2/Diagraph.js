@@ -1,34 +1,34 @@
 const { Bag } = require('../data-structure/Bag');
 
 class Diagraph {
-  #v;
+  #numberOfVertices;
 
-  #e;
+  #numberOfEdges;
 
-  #adj = [];
+  #adjacencyList = [];
 
-  constructor(v) {
-    this.#v = v;
-    for (let i = 0; i < this.#v; i++) {
-      this.#adj[i] = new Bag();
+  constructor(numberOfVertices) {
+    this.#numberOfVertices = numberOfVertices;
+    for (let i = 0; i < this.#numberOfVertices; i++) {
+      this.#adjacencyList[i] = new Bag();
     }
   }
 
-  addEdge(v, w) {
-    this.#adj[v].add(w);
-    this.#e++;
+  addEdge(source, destination) {
+    this.#adjacencyList[source].add(destination);
+    this.#numberOfEdges++;
   }
 
-  adj(v) {
-    return this.#adj[v];
+  adjacencyList(vertex) {
+    return this.#adjacencyList[vertex];
   }
 
-  v() {
-    return this.#v;
+  sizeOfVertices() {
+    return this.#numberOfVertices;
   }
 
-  e() {
-    return this.#e;
+  sizeOfEdges() {
+    return this.#numberOfEdges;
   }
 }
 
